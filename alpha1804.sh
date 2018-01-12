@@ -171,11 +171,11 @@ APT::Periodic::Unattended-Upgrade \"1\";" > /etc/apt/apt.conf.d/20auto-upgrades
 # Configuration du fichier pour le LDAP /etc/ldap.conf
 ########################################################################
 echo "
-# /etc/ldap.conf
+# /etc/ldap/ldap.conf
 host $ip_scribe
 base o=gouv, c=fr
 nss_override_attribute_value shadowMax 9999
-" > /etc/ldap.conf
+" > /etc/ldap/ldap.conf
 
 ########################################################################
 # activation des groupes des users du ldap
